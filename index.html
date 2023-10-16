@@ -1,77 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Certificate of Service</title>
-	<link rel="stylesheet" href="certificate.css">
+    <meta charset="UTF-8">
+    <title>Certificate of Service</title>
+    <link rel="stylesheet" href="certificate.css">
 </head>
 <body>
-	<div class="no-print">
-		<div class="logo">
-			<img src="https://example.com/logo.png" alt="Company Logo">
-			<h1>Certificate of Service</h1>
-		</div>
-		
-		<div class="container">
-			<form id="certificate-form">
-				<p>Client Name: <input type="text" name="client-name"></p>
-				<p>Company Name: <input type="text" name="company-name"></p>
-				<p>Vehicle Make: <input type="text" name="vehicle-make"></p>
-				<p>Vehicle Model: <input type="text" name="vehicle-model"></p>
-				<p>Vehicle Registration Number: <input type="text" name="vehicle-registration"></p>
-				<p>Date of Installation: <input type="date" name="date-of-installation"></p>
-				<p>Technician's Name: <input type="text" name="technician-name"></p>
-				<p>Technician's Signature: <input type="text" name="technician-signature"></p>
-				<button type="submit">Generate Certificate</button>
-			</form>
-		</div>
-	</div>
-	
-	<div id="certificate" class="container no-print">
-		<div class="logo">
-			<img src="https://example.com/logo.png" alt="Company Logo">
-			<h1>Certificate of Service</h1>
-		</div>
-		
-		<div class="details">
-			<div>
-				<p>Client Name:</p>
-				<p id="client-name"></p>
-			</div>
-			<div>
-				<p>Company Name:</p>
-				<p id="company-name"></p>
-			</div>
-			<div>
-				<p>Vehicle Make:</p>
-				<p id="vehicle-make"></p>
-			</div>
-			<div>
-				<p>Vehicle Model:</p>
-				<p id="vehicle-model"></p>
-			</div>
-			<div>
-				<p>Vehicle Registration Number:</p>
-				<p id="vehicle-registration"></p>
-			</div>
-			<div>
-				<p>Date of Installation:</p>
-				<p id="date-of-installation"></p>
-			</div>
-		</div>
-		
-		<div class="signature">
-			<div>
-				<p>Technician's Name:</p>
-				<p id="technician-name"></p>
-			</div>
-			<div>
-				<p>Technician's Signature:</p>
-				<p id="technician-signature"></p>
-			</div>
-		</div>
-	</div>
-	
-	<script src="html2pdf.bundle.min.js"></script>
-	<script src="certificate.js"></script>
+    <div class="no-print">
+        <div class="logo">
+            <img src="https://example.com/logo.png" alt="Company Logo">
+            <h1>Certificate of Service</h1>
+        </div>
+
+        <div class="container">
+            <form id="certificate-form">
+                <p>Client Name: <input type="text" name="client-name" placeholder="Enter client name"></p>
+                <p>Company Name: <input type="text" name="company-name" placeholder="Enter company name"></p>
+                <p>Vehicle Make: <input type="text" name="vehicle-make" placeholder="Enter vehicle make"></p>
+                <p>Vehicle Model: <input type="text" name="vehicle-model" placeholder="Enter vehicle model"></p>
+                <p>Vehicle Registration Number: <input type="text" name="vehicle-registration" placeholder="Enter vehicle registration number"></p>
+                <p>Date of Installation: <input type="date" name="date-of-installation"></p>
+                <p>Technician's Name: <input type="text" name="technician-name" placeholder="Enter technician name"></p>
+                <p>Technician's Signature: <input type="text" name="technician-signature" placeholder="Enter technician signature"></p>
+                <button type="submit">Generate Certificate</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="certificate" class="container no-print">
+        <div class="logo">
+            <img src="https://example.com/logo.png" alt="Company Logo">
+            <h1>Certificate of Service</h1>
+        </div>
+
+        <div class="details">
+            <div>
+                <p>Client Name:</p>
+                <p id="client-name"></p>
+            </div>
+            <div>
+                <p>Company Name:</p>
+                <p id="company-name"></p>
+            </div>
+            <div>
+                <p>Vehicle Make:</p>
+                <p id="vehicle-make"></p>
+            </div>
+            <div>
+                <p>Vehicle Model:</p>
+                <p id="vehicle-model"></p>
+            </div>
+            <div>
+                <p>Vehicle Registration Number:</p>
+                <p id="vehicle-registration"></p>
+            </div>
+            <div>
+                <p>Date of Installation:</p>
+                <p id="date-of-installation"></p>
+            </div>
+        </div>
+
+        <div class="signature">
+            <div>
+                <p>Technician's Name:</p>
+                <p id="technician-name"></p>
+            </div>
+            <div>
+                <p>Technician's Signature:</p>
+                <p id="technician-signature"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="certificate.js"></script>
 </body>
 </html>
